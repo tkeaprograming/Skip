@@ -1,0 +1,11 @@
+- prinxt: "--- ラッキーセブンを当てろ！ (10回チャンス) ---"
+- loop:
+    count: 10
+    do:
+      - var: { dice: "{random.randint(1, 10)}" }
+      - prinxt: "{_i} 回目：出目は {dice} です。"
+      - if:
+          cond: "dice == 7"
+          then:
+            - exit: "おめでとう！当たりが出たので終了します。"
+- prinxt: "残念、今回は当たりませんでした。"
