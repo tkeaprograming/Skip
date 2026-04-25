@@ -1,0 +1,15 @@
+# Define a reusable function
+- def:
+    name: "greet"
+    do:
+      - println: "{C.Y}--------------------{C.END}"
+      - println: "  Hello, {name}!"
+      - println: "{C.Y}--------------------{C.END}"
+
+# Set a variable and call the function
+- var: { name: "Explorer" }
+- call: "greet"
+
+# Perform a calculation
+- clc: "10 * 5 + 5"
+- println: "{C.G}Calculation Result: {res}{C.END}"
