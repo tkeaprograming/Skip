@@ -1,10 +1,4 @@
 # Skip
-   _____ __ __ _____________  
-  / ___// //_//_  __/  ____ /
-  \__ \/ ,<    / / / __|  _/
- ___/ / /| | _/ / /  /   
-/____/_/ |_|/___/ \__|  
-
 ==Sikp Ver Beta0.1==
 Skip Language Engine
 Skip is a lightweight, YAML-based scripting engine powered by Python. It's designed to be intuitive, readable, and highly extensible, making it perfect for rapid prototyping, CLI tools, and text-based adventures.
