@@ -1,10 +1,10 @@
 # Skip
-==Sikp Ver Beta0.1==
+==Sikp Ver 0.1==<br>
 Skip Language Engine
 Skip is a lightweight, YAML-based scripting engine powered by Python. It's designed to be intuitive, readable, and highly extensible, making it perfect for rapid prototyping, CLI tools, and text-based adventures.
 Key Features
 YAML-Native: Write your logic using clean, structured YAML syntax.
-Dynamic Evaluation: Support for f-string style variable expansion (e.g., {var_name}).
+Dynamic Evaluation: Support for f-string style variable expansion (e.g., {var_name}) <br>
 Built-in Coloring: Easily add flair to your console output with ANSI color constants.
 Modular Design: Define reusable blocks with def and execute them with call.
 Persistence: Save and load your session variables effortlessly using the .skp format.
@@ -20,16 +20,16 @@ bash
 python skip.py your_script.skp
 Syntax Example (demo.skp)
 # Define a reusable function
-- def:
-    name: "greet"
-    do:
-      - println: "{C.Y}--------------------{C.END}"
-      - println: "  Hello, {name}!"
-      - println: "{C.Y}--------------------{C.END}"
+- def:<br>
+    name: "greet"<br>
+    do:<br>
+      - println: "{C.Y}--------------------{C.END}"<br>
+      - println: "  Hello, {name}!"<br>
+      - println: "{C.Y}--------------------{C.END}"<br>
 
 # Set a variable and call the function
-- var: { name: "Explorer" }
-- call: "greet"
+- var: { name: "Explorer" }<br>
+- call: "greet"<br>
 
 # Perform a calculation
 - clc: "10 * 5 + 5"
